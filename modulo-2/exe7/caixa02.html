@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        /*página completa*/
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            
+
+        }
+        /*Primeiro quadrado*/
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            
+
+        }
+
+        h1 {
+            box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.385);
+            border-radius: 5px;
+        }
+        /*Parte dos LINKS*/
+        nav {
+            background-color: rgb(69, 67, 67);
+            border-radius: 10px;
+            padding: 3px;
+            box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.45);
+    
+
+        }
+        /*Parte dos LINKS*/    
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-left: 30px;
+        }
+
+
+        /*LINKS deixando subliado ao encostar*/
+        nav > a:hover {
+            text-decoration: underline;   
+        }
+        nav > a:active {
+            color: black;
+        }
+       
+
+
+        /*main onde está todo o conteúdo*/
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+        }
+
+        /*Noticias do pinguins ARTIGO*/
+        article {
+            background-color: lightgrey;
+            padding: 3px;
+        }
+
+        /*nome do escritor q é filho do article*/
+        article > aside { 
+            background-color: rgb(131, 129, 129);
+
+        }
+
+        /*esportes e tecnologia SESSÃO*/
+        section {
+            background-color: rgb(216, 57, 57);
+   
+        }
+        section > h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(61, 226, 43);
+
+        }
+        article > h2 {
+            color: blue;
+        }
+        /*nome do desenvolvedor curso em video RODAPÉ*/
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+    
+        </nav>
+    </header>
+ 
+    <main>
+        <section id="assuntos">
+            <h2>Esportes e Tecnologia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolorum recusandae voluptate aliquam, officiis labore quidem natus facilis, quisquam explicabo voluptas maiores ipsa vitae voluptatem ad alias fugiat aut sint.</p>
+
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre os pinguins</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, esse illo ad quae inventore est magnam maiores accusantium et sit? Hic iusto rem aperiam pariatur possimus eos maxime quaerat illum.</p>
+                <aside>
+                    <p>Artigo escrito por <span>Emanoel Silva</span> </p>
+
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+            
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+    <div id="bola"></div>
+
+</body>
+</html>

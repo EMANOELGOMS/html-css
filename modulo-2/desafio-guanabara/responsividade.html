@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Responsividade</title>
+    <style>
+        body {
+            background-color:lightgrey; /*Cor do site global*/
+        }
+        main {
+
+            background-color: white;
+            padding: 20px; /*pequeno espaçamento texto com o main*/
+            border-radius: 10px; /*Borda a redondada*/
+
+            min-width: 280px; /*Minimo que o main vai se adaptando com a tela*/
+            max-width: 800px; /*Maximo que o main vai se adaptando com a tela*/
+
+            margin: auto; /*Para deixar a parte do main ficar no meio*/
+        }
+        img {
+            width: 100%; /* Deixa a imganes de acordo com o tamanho da tela*/
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam necessitatibus magni omnis consectetur exercitationem ad quasi excepturi beatae porro tempore aspernatur itaque maxime repellat non, impedit repellendus soluta architecto culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem rerum deserunt vero dolor molestias voluptatum! Perspiciatis voluptates magnam inventore repellendus consequatur labore, nesciunt optio error facilis officiis quis culpa.</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+
+            <img src="imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam necessitatibus magni omnis consectetur exercitationem ad quasi excepturi beatae porro tempore aspernatur itaque maxime repellat non, impedit repellendus soluta architecto culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem rerum deserunt vero dolor molestias voluptatum! Perspiciatis voluptates magnam inventore repellendus consequatur labore, nesciunt optio error facilis officiis quis culpa.</p>
+    </main>
+    
+</body>
+</html>

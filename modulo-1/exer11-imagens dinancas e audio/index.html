@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="coruja.ico" type="image/x-icon">
+    <title>Imahens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir as imagens em ambientes diferentes ou
+        só puxe a imagem:
+    </p>
+
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+        type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+
+
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a colocar áudio no site.</p>
+
+
+    <p>Áudio um</p>
+    <audio src="midia/audio-1.mp3" controls autoplay></audio>
+    <!--Para pegar em todos os navegadores tem que obter todos os formatos-->
+    <!--MP3 WAV OGG-->
+
+    <p>Áudio dois</p>
+
+    <audio preload="metadata" autoplay controls loop>
+
+       <source src="midia/audio-2.mp3" type="audio/mpeg"> 
+       <source src="midia/audio-2.ogg" type="audio/ogg">
+       <source src="midia/audio-2.wav" type="audio/wav"> 
+       <p>Seu navegador não têm compatibilidade com a reprodução dos audios</p> 
+
+    </audio>
+
+    
+
+    
+</body>
+</html>
