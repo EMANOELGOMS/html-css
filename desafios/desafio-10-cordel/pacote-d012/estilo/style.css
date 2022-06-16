@@ -21,13 +21,21 @@ html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
+  
 
 }
+
+main {
+   
+    margin: auto;
+    width: 800px;
+    }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.389);
     
 
 }
@@ -51,22 +59,29 @@ header a, footer a {
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
-    color: blue;
+    color: darkgrey;
 }
 
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     line-height: 2em;
     padding-left: 30px;
     font-family:var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3.0vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.389);
     
+}
+
+#borda { 
+    border-radius: 0px 0px 10px 10px;
+
 }
 section > p {
     padding-bottom: 2em;
 }
+
 section.normal {
     background-color: white;
     color: black;
@@ -78,12 +93,14 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.389);
 }
 
 section.imagem > p {
     display: inline-block; /*Interessante*/
     padding: 6px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.487);
+    
     
     background-color: rgba(0, 0, 0, 0.489);
 }
@@ -112,6 +129,7 @@ footer {
     background-color: black;
     text-align: center;
     color: white;
-    padding: 10px
+    padding: 10px;
+    margin-top: 15px;
     
 }
