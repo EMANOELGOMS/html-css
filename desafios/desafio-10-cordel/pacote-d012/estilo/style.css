@@ -7,15 +7,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 
 :root {
     --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
-    --fonte3:'Sriracha', cursive;/*essa não pegou>> verificar*/ 
+    --fonte3: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
-
-
 
 
 html, body {
@@ -61,11 +60,13 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte2);
+    font-family:var(--fonte3);
     font-size: 3.5vw;
     
 }
-
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
@@ -74,18 +75,34 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.807);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block; /*Interessante*/
     padding: 6px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.487);
     
-    
-    background-color: rgba(0, 0, 0, 0.455);
+    background-color: rgba(0, 0, 0, 0.489);
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    /*background-size: cover;*/
+
+
 }
 
 
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    /*background-size: cover;*/
 
+    
+}
 
 
 
@@ -96,4 +113,5 @@ footer {
     text-align: center;
     color: white;
     padding: 10px
+    
 }
