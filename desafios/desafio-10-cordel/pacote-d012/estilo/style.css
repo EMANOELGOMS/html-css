@@ -21,6 +21,7 @@ html, body {
     min-height: 100vh;
     /*background-color: rgba(128, 128, 128, 0.13);*/
     background-image: url(../imagens/fundo.jpg);
+    background-attachment: fixed;
     font-family: var(--fonte1);
    
 
