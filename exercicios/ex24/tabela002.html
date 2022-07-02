@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+        th, td { 
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        
+        td.num {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: rgb(127, 133, 255);
+        }
+      
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>São paulo</td>               
+                <td class="num">45 919 019</td> 
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 564</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 928 293</td>
+            </tr>
+
+            <tr> 
+                <td>Juazerio do Norte</td>
+                <td class="num">280 000</td>
+
+            </tr>
+
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">8 437 923 </td>
+            </tr>
+
+            <tr>
+                <td>Recife</td>               
+                <td class="num">20 919 019</td> 
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">21 168 564</td>
+            </tr>
+            <tr>
+                <td>Crato</td>
+                <td class="num">17 928</td>
+            </tr>
+
+            <tr> 
+                <td>Natal</td>
+                <td class="num">280 000</td>
+
+            </tr>
+
+            <tr>
+                <td>Missão velha</td>
+                <td class="num">837 923 </td>
+            </tr>
+
+           
+
+        </tbody>
+        
+        <tfoot>
+            <tr> 
+               <th>Total de Habitantes</th>
+               <td class="num"><strong>0000000000</strong></td> 
+            </tr>
+
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
