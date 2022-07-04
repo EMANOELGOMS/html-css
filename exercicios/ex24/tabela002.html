@@ -12,7 +12,17 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
+        }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(0, 149, 255, 0.561);
+
+
         }
         th, td { 
             border: 1px solid black;
@@ -27,6 +37,17 @@
         thead, tfoot {
             background-color: rgb(127, 133, 255);
         }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(127, 133, 255);
+
+        }
       
 
 
@@ -40,13 +61,14 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
             
         </thead>
         
         <tbody>
+            <caption>População das Unidades Federativas</caption>
             <tr>
                 <td>São paulo</td>               
                 <td class="num">45 919 019</td> 
@@ -95,13 +117,43 @@
                 <td class="num">837 923 </td>
             </tr>
 
+            <tr>
+                <td>Santos</td>
+                <td class="num">8 437 923 </td>
+            </tr>
+
+            <tr>
+                <td>Pernabuco</td>               
+                <td class="num">20 919 019</td> 
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">21 168 564</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">17 928</td>
+            </tr>
+
+            <tr> 
+                <td>Bahia</td>
+                <td class="num">280 000</td>
+
+            </tr>
+
+            <tr>
+                <td>Missão Nova</td>
+                <td class="num">837 923 </td>
+            </tr>
+
+
            
 
         </tbody>
         
         <tfoot>
             <tr> 
-               <th>Total de Habitantes</th>
+               <th scope="row">Total de Habitantes</th>
                <td class="num"><strong>0000000000</strong></td> 
             </tr>
 
